@@ -1,0 +1,18 @@
+# Testing negative indices
+
+# Setup
+append 5
+append 9
+append 1
+append 13
+append 6
+print_list
+
+get -3
+get -8
+update -1 20
+update -6 100
+insert -2 3
+insert -7 15
+delete_at -5
+delete_at -10
