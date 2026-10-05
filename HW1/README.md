@@ -1,38 +1,38 @@
-METCS 526 Fall 2026 - HOMEWORK 1
+# METCS 526 Fall 2026 - HOMEWORK 1
 
-Author: Tyler Hunt
+## Author: Tyler Hunt
 
-Part 1: Introduce yourself
+### Part 1: Introduce yourself
 
-• How many programming classes have you taken?
-    - 11
-        Computer Science 1
-        Data Structures
-        Computer Organization
-        Principles of Software
-        Operating Systems
-        Logic Systems and Logical Programming
-        Functional Programming
-        Software Design and Documentation
-        Introduction to Artificial Intelligence
-        Database Systems
-        Network Programming
-    - 13 if you count stuff like Foundations of Computer Science and
+How many programming classes have you taken?
+    <p>- 11
+        <br>Computer Science 1
+        <br>Data Structures
+        <br>Computer Organization
+        <br>Principles of Software
+        <br>Operating Systems
+        <br>Logic Systems and Logical Programming
+        <br>Functional Programming
+        <br>Software Design and Documentation
+        <br>Introduction to Artificial Intelligence
+        <br>Database Systems
+        <br>Network Programming
+    <br>- 13 if you count stuff like Foundations of Computer Science and
         Introduction to Algorithms that are more conceptual and 
         don't involve much actual programming
-    - 14 if you count purely project-based classes, since I took an
-        Open-Source project development class a couple of times.
-• Do you know Java or Python or both?
-    - I know both but I'm pretty rusty in my programming skills with them.
-• What year are you in?
-    - 1st year M.S. in Software Development
-• What is your experience level with algorithms and data structures?
-    - I have taken Data Structures and Introduction to Algorithms in my undergraduate,
+    <br>- 14 if you count purely project-based classes, since I took an
+        Open-Source project development class a couple of times.</p>
+Do you know Java or Python or both?
+    <p>- I know both but I'm pretty rusty in my programming skills with them.</p>
+What year are you in?
+    <p>- 1st year M.S. in Software Development</p>
+What is your experience level with algorithms and data structures?
+    <p>- I have taken Data Structures and Introduction to Algorithms in my undergraduate,
         so I'm pretty experienced with them. In fact, I'm experienced enough to be scared
         at the mention of Dynamic Programming. However, I've forgotten a lot of what
-        I learned, especially things like basic programming skills, so I'm very out of practice.
+        I learned, especially things like basic programming skills, so I'm very out of practice.</p>
 
-Part 2: Coding Assignment
+### Part 2: Coding Assignment
 
     How to run from command line: 
         python helloworld.py
