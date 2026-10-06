@@ -1,0 +1,6 @@
+# Input: problem2_read.txt
+get(2) = 99
+find(5) = 4
+find(42) = -1
+len = 5
+Final list: 1 -> 12 -> 99 -> 3 -> 5

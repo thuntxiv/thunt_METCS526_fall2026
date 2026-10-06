@@ -1,0 +1,6 @@
+# Input: problem2_errors.txt
+line 8: index 10 out of range
+line 9: index must be an integer, got 'insert x 4'
+line 10: expected 'update <index> <value>', got 'update 1'
+line 11: unknown directive 'remove'
+Final list: 12 -> 3 -> 5

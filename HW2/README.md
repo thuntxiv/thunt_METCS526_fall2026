@@ -13,7 +13,10 @@ file using problem2_driver.py</p>
 <p>In problem3.py, my code builds a function that compiles the unique number of ways that a staircase
 with a given number of steps 'n' can be climbed in step increments of 1, 2, and 3.</p>
 
-<p>In problem4.py (TODO)</p>
+<p>In problem4.py my code implements a class for the Sorted Doubly-Linked List structure with more
+restrictive CRUD operations due to the sorted nature of the list. Another driver program is implemented
+in problem4_driver.py to rigorously test the class' functionality with different kinds of input commands
+and arguments.</p>
 
 <p>Below are my answers to questions 1 and 3 (a & b):</p>
 
@@ -97,7 +100,35 @@ recursive case out of the addition of the ways compiled from all three starting 
 
 <p>I don't really see any other places I could deviate and create a different solution, so I'll just leave it at that.</p>
 
+<p>Also, I didn't include printing out the step sequences, since I wasn't sure if we needed to or not, and it's a bit late
+to ask questions at the time I'm writing this. Along the same lines, it's pretty late and I really don't feel like rushing to
+do it and get it in before 11:59.</p>
+
 ### Problem 4
+<p>For my SortedDoublyLinkedList class, I had to make some decisions about what kinds of values it can store and how I
+went about iterating through the list during certain operations. First, I had to specify in its documentation that you can
+only store integers and floating point numbers in the list, since other value types won't work with the statistics operations
+like median().</p>
+
+<p>In regards to my list traversal, I decided to use recursion in nearly every function that the class has. I already used
+for loops in SinglyLinkedList, so I figured I might as well challenge myself a little. The recursion uses a head pointer and
+sometimes an index to traverse up the list's nodes via recursion, and nearly all of the functions have a recursive helper
+function that they call to perform this traversal. One downside of using recursion is that I couldn't quite figure out
+how to cut down on runtime by searching from both ends of the list at once. I could probably make that optimization if I
+had used loops instead. However, I was still able to truncate the running times of functions like exists() and count()
+by using the sorted nature of the list to check for when to stop, as indicated when the list's values grow larger than
+the function's parameter value.</p>
+
+<p>Otherwise, most of the class' functionality is pretty standard with respect to Doubly-Linked lists and how you need
+to patch up the holes in nodes' next and prev pointers. I only had to make a few extra cases for when the beginning or
+end of a list is being added to or removed from, since I can't access the next and prev pointers of a None type object</p>
+
+<p>In the driver program, I needed to make some adjustments to how I processed number strings to account for floating
+point numbers, since the built-in python programs to check strings for numbers don't quite function with decimals.
+I adjusted my function from problem 2's driver program to return an integer from 0-2 depending on if the string was
+not a valid number, an integer, or a floating point number. In the match-case statement for my directives, I then needed
+to embed another match-case statement whenever I was expecting a numerical value argument. This was the most intuitive way
+I saw to handle the inclusion of decimal number strings as input.</p>
 
 ## Notable Aspects
 ### Problem 2
@@ -110,16 +141,25 @@ recursive case out of the addition of the ways compiled from all three starting 
     I don't think anything is notable about my implementation. It seems like the intended way to code this problem.
 
 ### Problem 4
-    TODO: Write stuff here
+    As I mentioned above, the most notable aspect of my doubly-linked list is how I used recursion for every traversal
+    instead of for loops. It cut off some possibilities for runtime optimization, and it nearly doubled the amount of
+    functions in the class, but it technically did make each individual function much less cluttered as opposed to my
+    for loop traversals in problem 2.
 
 ## How to run
 ### Problem 2
     python problem2_driver.py
     (or)
     python problem2_driver.py < (input file)
+        To use the text files in the test_files directory, use the following (replacing the file name as needed):
+            python problem2_driver.py < test_files\problem2_basic.txt
 
 ### Problem 3
     python problem3.py
 
 ### Problem 4
+    python problem4_driver.py
+    (or)
     python problem4_driver.py < (input file)
+        To use the text files in the test_files directory, use the following (replacing the file name as needed):
+            python problem2_driver.py < test_files\problem4_simple.txt

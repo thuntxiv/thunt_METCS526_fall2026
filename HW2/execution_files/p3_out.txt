@@ -1,0 +1,7 @@
+Step combinations for an input of 1 steps: 1
+Step combinations for an input of 2 steps: 2
+Step combinations for an input of 3 steps: 4
+Step combinations for an input of 4 steps: 7
+Step combinations for an input of 5 steps: 13
+Step combinations for an input of 7 steps: 44
+Step combinations for an input of 10 steps: 274

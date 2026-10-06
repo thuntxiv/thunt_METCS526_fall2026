@@ -1,0 +1,2 @@
+# Input: problem2_basic.txt
+Final list: 12 -> 5 -> 2 -> 7

@@ -1,0 +1,10 @@
+# Input: problem4_simple.txt
+add(5)
+add(1)
+add(3)
+1 <-> 3 <-> 5
+exists(3) = True
+delete(3)
+exists(3) = False
+1 <-> 5
+Final list: 1 <-> 5

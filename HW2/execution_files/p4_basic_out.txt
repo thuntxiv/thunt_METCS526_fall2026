@@ -1,0 +1,8 @@
+# Input: problem4_basic.txt
+add(10)
+add(4)
+add(29)
+add(8)
+add(2)
+2 <-> 4 <-> 8 <-> 10 <-> 29
+Final list: 2 <-> 4 <-> 8 <-> 10 <-> 29
