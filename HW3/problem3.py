@@ -283,10 +283,9 @@ class StackSinglyLinked(Stack):
 
 class StackDoublyLinked(Stack):
     
-    def __init__(self):
-        self.size = 0
-        self.head = None
-        self.tail = None
+    size = 0
+    head = None
+    tail = None
 
     def push(self, value):
         '''
